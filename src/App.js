@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import CardContainer from './components/CardContainer'
+import React, {useState} from 'react'
+import Counter from './components/Counter'
+import Input from './components/Input'
 
 function App() {
+  const [counter, setCounter] = useState(0)
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Guess the Pokemon!</h1>
+        <Counter counter={counter} />
+        <CardContainer counter={counter} setCounter={setCounter}/>
+        {/* <Input pokemon={pokemon} setPokemon={setPokemon} refresh={refresh} setRefresh={setRefresh} answer={answer} setAnswer={setAnswer} counter={counter} setCounter={setCounter}/> */}
       </header>
     </div>
   );
