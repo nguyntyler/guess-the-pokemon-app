@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Guess the Pokemon!</h1>
+        <h1>Guess that Pokemon!</h1>
         <Counter counter={counter} />
         <CardContainer counter={counter} setCounter={setCounter}/>
         {/* <Input pokemon={pokemon} setPokemon={setPokemon} refresh={refresh} setRefresh={setRefresh} answer={answer} setAnswer={setAnswer} counter={counter} setCounter={setCounter}/> */}

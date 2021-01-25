@@ -10,7 +10,7 @@ export default function CardContainer({counter, setCounter}) {
     const [answer, setAnswer] = useState("")
     const [refresh, setRefresh] = useState(false)
     useEffect(()=> {
-        const pokeNum = (Math.floor(Math.random() * Math.floor(300)))
+        const pokeNum = (Math.floor(Math.random() * 151))
 
         GetPokemon(setPokemon, pokeNum)
     }, [refresh])
